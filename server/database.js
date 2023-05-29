@@ -68,7 +68,7 @@ class database {
     }    
 }
 
-let uri; //Put your Mongodb URI here
+let uri; //Put your Atlas Mongodb URI here
 const peopleDb = new database(uri);
 await peopleDb.connect();
 
