@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css" />
+    <script src="register.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="waves-of-color" id="waves-of-color">
+        <div class="register-container" id="register-container">
+            <div class="logo" id="logo">  
+                <img src="/images/umifyPinkLogo.png">
+            </div>
+            <div class="fields" id="fields">
+                <h1>Username: </h1>
+                <input type="text" class="field username" id="username" required></input>
+                <h1>Password: </h1>
+                <input type="password" id="password" name="password" oninput="isPasswordValid()" required>
+                <br><br>
+                <span id="passwordError" class="passwordError"></span>
+            </div>
+            <div>
+                <p style="color: white; padding-left: 45px;">Please use a password that is 8 characters long with 1 uppercase, 1 lowercase and 1 of these special characters: !@#$%^&*</p>
+                <div class="button-container">  
+                    <button class="button register" id="register">Sign Up!</button>
+                </div>  
+            </div>
+        </div>
+        <div class="behind" id="register-container"> </div>
+    </div>
+</body>
+</html>

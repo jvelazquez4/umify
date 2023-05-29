@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    zoom:75%;
+}
+
+.waves-of-color {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: linear-gradient(315deg, #D384BD 0%, #1D1D1D 75%);
+    z-index: -2;
+}
+
+.register-container {
+    position: relative;
+    height: 550px;
+    width: 450px;
+    background-color: #1D1D1D;
+    opacity: 80%;
+    border-radius: 50px;
+    margin: auto;
+
+    transform: translate(-5%, 50%);
+}
+
+.behind {
+    /* display: none; */
+    position: relative;
+    height: 550px;
+    width: 450px;
+    background-color: #D384BD;
+    opacity: 50%;
+    border-radius: 50px;
+    margin: auto;
+
+    z-index: -2;
+
+    transform: translate(0%, -55%);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.fields {
+    color: white;
+    /* outline: 2px solid green; */
+    text-align: center;
+}
+
+.field {
+    color: black;
+    width: 220px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    font-family: inherit;
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.button:hover {
+    color: white;
+    background-color: #737373;
+}
+
+.spotify {
+    width: 120px;
+    margin-left: 20px;
+}
+
+.register {
+    margin-right: 20px;
+}
+
+.passwordError {
+    display: block;
+    height: 10px;
+}
+
+.circ-marquee {
+    position: absolute;
+    color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+    animation: scroll 12s infinite;
+    z-index: -1;
+}
+
+@keyframes scroll {
+    0% {
+        top: -50%;
+    }
+    100% {
+        top: 150%;
+    }
+}

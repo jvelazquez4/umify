@@ -1,0 +1,162 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+.grand-container {
+    height: 100%;
+    width: 100%;
+}
+
+.navbar {
+    background-color: #1D1D1D;
+    padding-left: 1.2%;
+    zoom:75%;
+}
+
+.navbar-nav{
+    justify-self: end;
+    font-size: 30px;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+
+
+#waves-of-color {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    background: linear-gradient(315deg, #D384BD 0%, #1D1D1D 75%);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    overflow: auto;
+}
+
+/* 
+TODO: waves-of-color 
+
+    outline: solid 2px;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: linear-gradient(315deg, #D384BD 0%, #1D1D1D 75%);
+
+*/
+
+.nav-container {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    justify-content: flex-start;
+}
+
+.tab {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: sans-serif;
+    margin-left: 50px;
+    font-size: 30px;
+}
+
+.tab:hover {
+    color: #D384BD;
+    transition-duration: 0.3s;
+}
+
+.listeners-near-you {
+    animation: fadeInOnLoad 2s;
+}
+
+.circle {
+    background-color: white;
+    border: 3px;
+    border-radius: 50%;
+    position: absolute;
+    transition: all 0.6s;
+    text-align: center;
+    border-color: #1D1D1D;
+    border-width: 3px;
+    border-style: solid;
+    box-shadow: 5px 10px 10px #1D1D1D;
+}
+
+@keyframes fadeInOnLoad {
+    from { opacity: 0;}
+    to {opacity: 1;}
+}
+
+.circle:hover {
+    border-radius: 10%;
+    border-color: #1D1D1D;
+    border-width: 3px;
+    border-style: solid;
+    background-color: #c76e57;
+    /* filter: brightness(80%); */
+}
+
+.song-label {
+    color: white;
+    opacity: 0%;
+    transition: all 0.6s;
+    font-size:large;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.artist-label {
+    color: white;
+    opacity: 0%;
+    transition: all 0.6s;
+    font-size:large;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.circle:hover > .song-label{
+    opacity: 100%;
+    transform: translateY(-40px);
+}
+
+.circle:hover > .artist-label{
+    opacity: 100%;
+    transform: translateY(60px);
+}
+
+.header-encap {
+    width: 300px;
+    position: absolute;
+    color: white;
+    font-family: sans-serif;
+    font-size: medium;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.listen-header {
+    margin-top: 50%;
+    opacity: 1;
+    animation: fadeIn 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fadeIn {
+    0%, 10%, 90%, 100% {opacity: 0;}
+    50% {opacity: 1;}
+}
+
+.spanner {
+    position:absolute; 
+    width:100%;
+    height:100%;
+    top:0;
+    left: 0;
+    z-index: 1;
+    cursor: default;
+}

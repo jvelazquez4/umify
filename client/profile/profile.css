@@ -1,0 +1,258 @@
+body {
+    /* margin: 0; */
+    height: 100%;
+    overflow: auto;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(315deg, #D384BD 0%, #1D1D1D 75%);
+    position: absolute;
+    overflow: auto;
+}
+
+.nav-container {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: flex-start;
+    
+    background: #1D1D1D;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15), 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: sans-serif;
+    margin-left: 50px;
+    font-size: 30px;
+}
+.tab:hover {
+    color: #D384BD;
+    transition-duration: 0.3s;
+}
+
+/*      === SIDEBAR STYLING ===
+ *      - PROFILE PIC
+ *      - PROFILE NAME
+ *      - PROFILE USERNAME
+ *      - PROFILE PRONOUNS
+ *      - PROFILE BIOGRAPGHY
+*/
+
+.sidebar {
+	/* sizing and positioning */
+    width: 30%;
+    height: 100%;
+    padding-top: 30px;
+	position: absolute;
+	
+    /* coloring */
+    background-color: #44273C;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	color: white;
+	
+    /* alignment */
+    text-align: center;
+	align-items: center;
+	justify-content: center;    
+}
+/* 
+.profile-background { 
+    background-color: #44273C;    
+} */
+
+#profile-pic:hover {
+    /* add styles for hover state here */
+    background-color: #D384BD;
+    opacity: 0.3;
+    clip-path: circle(44%);
+    transition-duration: 0.3s;
+    cursor: pointer;
+  }
+
+.profile-pic {
+    overflow: hidden;
+    width: 100%;
+    padding-top: 2%;
+    position: relative;
+}
+
+.profile-pic img {
+    width:80%;
+    position: relative;
+    clip-path: circle(50%);
+    object-fit: cover;
+}
+
+.profile-info {
+    overflow: hidden;
+    width: 100%;
+    padding-top: 5%;
+    position: relative;
+}
+
+.profile-name {
+    overflow: auto;
+    font-size: 30px;
+    font-style: bold;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.profile-user-pronouns {
+    overflow: auto;
+    font-size: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.profile-bio {
+    overflow: auto;
+    font-size: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    cursor: pointer;
+}
+
+.edit-name-box, .edit-bio-box, .edit-user-pronouns-box {
+    display: none;
+    color: black;
+    overflow: auto;
+    overflow-wrap: break-word;
+    height: 20%;
+}
+
+input[type=text] {
+    color: black;
+    border-radius: 0.7em;
+    height: 20%;
+    overflow-wrap: break-word;
+    overflow: auto;
+}
+
+input[type=submit] {
+    color: black;
+    background-color: #D384BD;
+    cursor: pointer;
+  }
+
+.profile-name:hover, .profile-user-pronouns:hover, .profile-bio:hover {
+    transition-duration: 0.3s;
+    color: #D384BD;
+    cursor:url('../../images/edit_cursor.png'), auto;
+}
+
+/*      === ANALYTICS STYLING ===
+ *      - TOP GENRE
+ *      - TOP PLAYLIST
+ *      - FRIEND LIST
+*/
+
+.grid {
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+    padding-left: 32%;
+	display: grid;
+	overflow: hidden;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	grid-gap: 20px;
+    float: left;
+}
+
+.grid-item {
+    padding: 10px;
+    background: #1d1d1d;
+    size: 30px;
+    border-radius: .7em;
+    opacity: 0.6;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-shadow: -2px 2px 8px 2px hsla(0, 0%, 0%, 0.2);
+
+    color: white;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    padding-right: 2%;
+}
+
+#topgenre {
+    display: grid;
+}
+
+#topplaylist {
+    display: grid;
+}
+
+#friendlist {
+    color: white;
+}
+
+#topgenre:hover, #topplaylist:hover, #friendlist:hover {
+    color: #ffc2ee;
+    transition-duration: 0.3s;
+}
+
+.cards {
+    margin: 5% auto;
+    padding-bottom: 5%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+}
+
+.card {
+    background: white;
+    margin: 8px;
+    border-radius: 2em;
+    max-width: 200px;
+    max-height: 200px;
+    min-width: 200px;
+    min-height: 200px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    transition: all 0.3s 0s ease-in;
+}
+
+.card:hover {
+    background-color: #e8cbe0;
+    opacity: 0.3;
+    clip-path: circle(44%);
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.card-image-box {
+    background: rgba(0,0,0,0.1);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-title {
+    background: rgba(0,0,0,0.1);
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+}
+
+.card:hover .card-title{
+    height:auto;
+}

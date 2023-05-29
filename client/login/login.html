@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css" />
+    <script type="module" src="login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pouchdb@7.2.2/dist/pouchdb.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="waves-of-color" id="waves-of-color">
+        <div class="login-container" id="login-container">
+            <div class="logo" id="logo">  
+                <img src="/images/umifyPinkLogo.png">
+            </div>
+            <div class="fields" id="fields">
+                <h1>Username: </h1>
+                <input type="text" class="field username" id="username"></input>
+                <h1>Password: </h1>
+                <input type="password" class="field password" id="password"></input>
+            </div>
+            <div class="button-container">
+                <button class="register-button" id="register">Register Here!</button>
+                <button class="login-button" id="login">Log In</button>
+            </div>
+        </div>
+        <div class="behind" id="login-container"></div>
+    </div>
+</body>
+</html>

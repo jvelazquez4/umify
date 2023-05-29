@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    zoom:75%;
+}
+
+.waves-of-color {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: linear-gradient(315deg, #D384BD 0%, #1D1D1D 75%);
+}
+
+.login-container {
+    position: relative;
+    height: 500px;
+    width: 450px;
+    background-color: #1D1D1D;
+    opacity: 80%;
+    border-radius: 50px;
+    margin: auto;
+
+    transform: translate(-5%, 55%);
+}
+
+.behind {
+    /* display: none; */
+    position: relative;
+    height: 500px;
+    width: 450px;
+    background-color: #D384BD;
+    opacity: 50%;
+    border-radius: 50px;
+    margin: auto;
+
+    z-index: -1;
+
+    transform: translate(0%, -50%);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.fields {
+    color: white;
+    /* outline: 2px solid green; */
+    text-align: center;
+}
+
+.field {
+    color: black;
+    width: 220px;
+}
+
+.button-container {
+    padding: 40px;
+    text-align: center;
+}
+
+.login-button {
+    font-family: inherit;
+    height: 40px;
+    min-width: 80px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.login-button:hover {
+    color: white;
+    background-color: #737373;
+}
+
+.register-button {
+    font-family: inherit;
+    height: 40px;
+    min-width: 80px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+.register-button:hover {
+    color: white;
+    background-color: #737373;
+}

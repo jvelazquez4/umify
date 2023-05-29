@@ -1,0 +1,87 @@
+<html lang="en">
+
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- styling -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="profile.css" />
+    <script type="module" src="profile.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pouchdb@7.2.2/dist/pouchdb.min.js"></script>
+
+    <!-- title & favicon -->
+    <title>UMify - Profile</title>
+    <link rel="icon" type="image/png" href="../../images/umifyU.png"/>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="nav-container" id="nav-container">
+            <img src="/images/umifyPinkLogo.png" height="103" width="234" class="logo" id="logo" alt="favicon">
+            <div class="tab home" id="home">/Home/</div>
+            <div class="tab friends" id="friends">/Friends/</div>
+            <div class="tab vibes" id="vibes">/Vibes/</div>
+        </div>
+
+        <div class="sidebar" id="sidebar">
+            <div class="profile-pic" id="profile-pic">
+                <img id="pfp" src="https://images.nightcafe.studio//assets/profile.png?tr=w-1600,c-at_max">
+            </div>
+
+    
+            <div class="profile-info" id="profile-info">
+                <div class = "myprofile-info"> 
+                    <div class="profile-name" id="profile-name">John Smith</div>
+                    <div class="profile-user-pronouns" id="profile-user-pronouns"><p>👤 @username123 | he/him</p></div>
+                    <br>
+                    <div class="profile-bio" id="profile-bio">
+                        <p>✏️ This is where my profile biography goes! I can put pretty long bios here, because the content overflows to the next line!</p>
+                    </div>
+                </div>
+                <div class="edit-name-box"> 
+                    <form id="form-name">
+                        <br>
+                        <input placeholder ="Enter new name..." type="text-name"><br><br>
+                        <input type="submit" value="Submit" id="submit-name">
+                    </form>
+                </div>
+                <div class="edit-user-pronouns-box"> 
+                    <form id="form-username">
+                        <br>
+                        <input placeholder ="Enter new username..." type="text-username"><br><br>
+                        <input type="submit" value="Submit" id="submit-username">
+                    </form>
+                    <form id="form-pronouns">
+                        <br>
+                        <input placeholder ="Enter new pronouns..." type="text-pronouns"><br><br>
+                        <input type="submit" value="Submit" id="submit-pronouns">
+                    </form>
+                </div>
+                <div class="edit-bio-box"> 
+                    <form id="form-bio">
+                        <br>
+                        <input placeholder ="Enter new bio..." type="text-bio"><br><br>
+                        <input type="submit" value="Submit" id="submit-bio">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid" id="analytics">
+            <div class="grid-item" id="topgenre">
+                <h4>Favorite Genres</h4>   
+            </div>
+            <div class="grid-item" id="topplaylist">
+                <h4>Favorite Playlists</h4> 
+                     
+            </div>
+            </div>
+            
+        </div>
+        
+    </div>
+</body>
+</html>
